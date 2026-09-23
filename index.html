@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Librairie Joon Sh — une sélection de livres pour ouvrir de nouvelles fenêtres." />
+  <title>Librairie Joon Sh — Lire autrement</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar" id="accueil">
+    <a class="logo" href="#accueil"><span class="logo-mark">JS</span><span>Librairie <b>Joon Sh</b></span></a>
+    <nav class="main-nav" aria-label="Navigation principale"><a href="#selection">La sélection</a><a href="#categories">Catégories</a><a href="#librairie">La librairie</a><a href="#contact">Contact</a></nav>
+    <a class="contact-pill" href="#contact">Nous contacter <span>↗</span></a>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">Depuis toujours · Pour tous les imaginaires</p><h1>Un bon livre<br />ouvre une <em>fenêtre.</em></h1><p class="hero-intro">Bienvenue chez Librairie Joon Sh. Une sélection vivante de romans, d'essais et de beaux livres, choisie avec curiosité et passion.</p><div class="hero-actions"><a class="button button-dark" href="#selection">Voir la sélection <span>↗</span></a><a class="text-link" href="#librairie">Découvrir la librairie <span>↓</span></a></div></div>
+      <div class="hero-visual"><div class="hero-image"><img src="https://files.manuscdn.com/search-media/310519663561245363/fup7KtQenoZEzvCb3EDwz8/GoStHhmDpqjmeMcnxQfZoK.jpg" alt="Lampe chaleureuse sur une pile de livres" /></div><div class="hero-note"><span>À lire<br />sans modération</span><strong>✳</strong></div><div class="hero-index">01 <i>/</i> 04</div></div>
+    </section>
+
+    <section class="trust-strip"><div><strong>Une sélection humaine</strong><span>Des livres choisis avec soin</span></div><div><strong>Pour tous les âges</strong><span>Du premier album au grand roman</span></div><div><strong>Un conseil sincère</strong><span>Écrivez-nous, on vous répond</span></div></section>
+
+    <section class="selection section" id="selection"><div class="section-heading"><div><p class="eyebrow">Nos coups de cœur</p><h2>À la une<br /><em>en ce moment.</em></h2></div><p class="heading-description">Quelques titres qui méritent une place sur votre table de chevet, dans votre sac ou entre les mains de quelqu'un que vous aimez.</p></div><div class="catalog-toolbar"><div class="filters" role="group" aria-label="Filtrer les livres"><button class="filter active" data-category="Tous">Tous</button><button class="filter" data-category="Romans">Romans</button><button class="filter" data-category="Essais">Essais</button><button class="filter" data-category="Jeunesse">Jeunesse</button><button class="filter" data-category="Beaux livres">Beaux livres</button></div><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Rechercher un titre ou un auteur" /></label></div><div class="book-grid" id="book-grid"></div><p class="empty-state" id="empty-state" hidden>Aucun livre ne correspond à votre recherche.</p></section>
+
+    <section class="category-section section" id="categories"><div class="section-heading compact"><div><p class="eyebrow">Choisir son humeur</p><h2>Une porte pour<br /><em>chaque monde.</em></h2></div></div><div class="category-grid"><a class="category-card rose" href="#selection" data-jump="Romans"><span>01</span><h3>Romans</h3><p>Des histoires pour voyager sans bouger.</p><b>Explorer ↗</b></a><a class="category-card blue" href="#selection" data-jump="Essais"><span>02</span><h3>Essais</h3><p>Des idées pour regarder autrement.</p><b>Explorer ↗</b></a><a class="category-card gold" href="#selection" data-jump="Jeunesse"><span>03</span><h3>Jeunesse</h3><p>Les grandes aventures commencent tôt.</p><b>Explorer ↗</b></a><a class="category-card dark" href="#selection" data-jump="Beaux livres"><span>04</span><h3>Beaux livres</h3><p>Quand les images racontent aussi.</p><b>Explorer ↗</b></a></div></section>
+
+    <section class="about section" id="librairie"><div class="about-image"><img src="https://files.manuscdn.com/search-media/310519663561245363/fup7KtQenoZEzvCb3EDwz8/MKbqs8jujawP9LFfEpikSG.jpg" alt="Rayonnages d'une librairie lumineuse" loading="lazy" /><span>La librairie<br /><i>comme lieu de vie.</i></span></div><div class="about-copy"><p class="eyebrow">Notre manière de faire</p><h2>Lire, c'est<br /><em>se relier.</em></h2><p class="lead">Chez Joon Sh, on croit qu'une librairie est plus qu'un endroit où l'on achète des livres.</p><p>C'est un lieu de rencontres, de curiosités et de conversations qui commencent souvent par un simple « vous me conseillez quoi ? ».</p><a class="button button-outline" href="#contact">Parler avec nous <span>↗</span></a></div></section>
+
+    <section class="contact-section section" id="contact"><div class="contact-card"><div><p class="eyebrow">Une question, une idée ?</p><h2>Parlons<br /><em>livres.</em></h2><p>Pour un conseil, une disponibilité ou simplement partager une lecture, contactez Librairie Joon Sh.</p></div><div class="contact-details"><a href="tel:0331436298"><small>Téléphone</small><strong>033 14 36 298</strong></a><a href="tel:0344650314"><small>Second numéro</small><strong>034 46 50 314</strong></a><a href="mailto:Joonsh57@gmail.com"><small>Email</small><strong>Joonsh57@gmail.com</strong></a><div class="socials"><small>Suivez-nous</small><a href="https://www.facebook.com/joonsh" target="_blank" rel="noreferrer">Facebook · Joon Sh ↗</a><a href="https://www.instagram.com/joon.shh" target="_blank" rel="noreferrer">Instagram · joon shh ↗</a></div></div></div></section>
+  </main>
+
+  <footer><a class="logo" href="#accueil"><span class="logo-mark">JS</span><span>Librairie <b>Joon Sh</b></span></a><span>Lire autrement, chaque jour.</span><a href="#accueil">Retour en haut ↑</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
+
